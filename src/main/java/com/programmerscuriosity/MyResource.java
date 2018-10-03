@@ -1,9 +1,10 @@
 package com.programmerscuriosity;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import com.sun.org.glassfish.gmbal.Description;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 /**
  * Created by marom on 27/09/16.
@@ -23,4 +24,14 @@ public class MyResource {
 	public String getIt() {
 		return "Got it!";
 	}
+
+	@GET
+	@Path("/getMore")
+	public String getPartialAccrualSchedule(
+					@QueryParam("val") String request)
+	{
+		System.out.println(request);
+		return "hi";
+	}
+
 }
