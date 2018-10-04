@@ -12,5 +12,6 @@
 </head>
 <body>
 <p><a href="rest/myresource">Jersey resource</a>
+<p><a href="rest/orders">Jersey resource</a>
 </body>
 </html>
